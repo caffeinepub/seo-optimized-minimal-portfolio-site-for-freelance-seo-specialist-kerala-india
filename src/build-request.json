@@ -1,0 +1,20 @@
+{
+  "kind": "build_request",
+  "title": "No-op: Contact form already implemented on Contact section",
+  "priority": "normal",
+  "requirements": [],
+  "constraints": [
+    "Use English for any user-facing text.",
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Backend must remain a single Motoko actor (backend/main.mo); only add migration.mo if existing stable state requires it."
+  ],
+  "nonGoals": [
+    "Do not add a new contact form UI; one already exists.",
+    "Do not add third-party email/SMS integrations (e.g., SendGrid/Mailgun/Twilio).",
+    "Do not add real-time messaging or chat features."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T08:59:42.422Z",
+  "summary": "BuildRequest specifies no requirements and explicitly calls for a no-op regarding the contact form. The diff only modifies project_state.json by adding/updating a set of portfolio/SEO/contact-form related features with REQ-1..REQ-6, which are not requested in the BuildRequest.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Added/updated multiple 'existing_features' entries (e.g., mobile-first portfolio site, sticky header nav, section structure, on-page/technical SEO, and a contact inquiry form requirement) with REQ-1 through REQ-6 in project state, despite the BuildRequest having no requirements and being a no-op.",
+      "reason": "The BuildRequest states Requirements: none and Non-goals include not adding a new contact form UI; the diff introduces new scoped requirements/features in the project state that were not requested.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.78,
+  "changed_files": [
+    "project_state.json"
+  ]
+}

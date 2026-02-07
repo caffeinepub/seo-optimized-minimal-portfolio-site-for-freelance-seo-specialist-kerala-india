@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.375rem;
+        /* Minimal color palette - professional and clean */
+        --background: 1 0 0; /* Pure white */
+        --foreground: 0.2 0 0; /* Near black for text */
+        --card: 1 0 0;
+        --card-foreground: 0.2 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.2 0 0;
+        --primary: 0.35 0.08 240; /* Professional blue */
+        --primary-foreground: 0.98 0 0;
+        --secondary: 0.96 0 0; /* Light gray */
+        --secondary-foreground: 0.2 0 0;
+        --muted: 0.96 0 0;
+        --muted-foreground: 0.5 0 0;
+        --accent: 0.96 0 0;
+        --accent-foreground: 0.2 0 0;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.9 0 0;
+        --input: 0.9 0 0;
+        --ring: 0.35 0.08 240;
+        --success: 0.55 0.15 145; /* Green for success states */
+        --success-foreground: 0.98 0 0;
+    }
+
+    .dark {
+        --background: 0.15 0 0;
+        --foreground: 0.98 0 0;
+        --card: 0.2 0 0;
+        --card-foreground: 0.98 0 0;
+        --popover: 0.2 0 0;
+        --popover-foreground: 0.98 0 0;
+        --primary: 0.6 0.12 240;
+        --primary-foreground: 0.98 0 0;
+        --secondary: 0.25 0 0;
+        --secondary-foreground: 0.98 0 0;
+        --muted: 0.25 0 0;
+        --muted-foreground: 0.65 0 0;
+        --accent: 0.3 0 0;
+        --accent-foreground: 0.98 0 0;
+        --destructive: 0.6 0.22 25;
+        --destructive-foreground: 0.15 0 0;
+        --border: 0.3 0 0;
+        --input: 0.3 0 0;
+        --ring: 0.6 0.12 240;
+        --success: 0.6 0.15 145;
+        --success-foreground: 0.98 0 0;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+
+    /* Smooth scroll for anchor links */
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 5rem;
+    }
+
+    /* Typography improvements for readability */
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-semibold tracking-tight;
+    }
+
+    p {
+        @apply leading-relaxed;
+    }
+}
+
+/* Custom utility for success color */
+@layer utilities {
+    .text-success {
+        color: oklch(var(--success));
+    }
+    .bg-success {
+        background-color: oklch(var(--success));
+    }
+    .border-success {
+        border-color: oklch(var(--success));
+    }
+}

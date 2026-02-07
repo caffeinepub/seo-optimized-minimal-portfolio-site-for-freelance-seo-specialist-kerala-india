@@ -1,0 +1,16 @@
+{
+  "frontend/src/index.css": "Global styles with minimal OKLCH color system (white background, professional blue primary, clean grays) and typography optimizations for readability and smooth scrolling.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended container padding, professional color tokens, and minimal design utilities.",
+  "frontend/src/seo/seoConfig.ts": "SEO configuration defining metadata for each section (Home, About, Services, Case Studies, Contact) with target keywords and JSON-LD structured data for a professional service in Kerala, India.",
+  "frontend/src/seo/SeoHeadManager.tsx": "React component that dynamically updates document title, meta tags, Open Graph/Twitter cards, canonical links, and JSON-LD structured data based on the active section with proper TypeScript casting for HTMLScriptElement and HTMLLinkElement.",
+  "frontend/src/components/SiteHeader.tsx": "Sticky header with desktop and mobile navigation (5 items: Home, About, Services, Case Studies, Contact) using smooth scroll and active section highlighting.",
+  "frontend/src/components/sections/HomeSection.tsx": "Hero section with H1 targeting \"Freelance SEO Expert in Kerala\", value proposition, CTAs, and specialization tags.",
+  "frontend/src/components/sections/AboutSection.tsx": "About section explaining the honest, execution-focused approach with working principles and tools used.",
+  "frontend/src/components/sections/ServicesSection.tsx": "Services section displaying 6 SEO service cards (Technical Audits, On-Page, Local SEO, Content Strategy, Schema, Monitoring) with deliverables.",
+  "frontend/src/components/sections/CaseStudiesSection.tsx": "Case studies section with 3 anonymized examples showing challenges, actions, and measurable outcomes with realistic disclaimers.",
+  "frontend/src/components/ContactForm.tsx": "Contact form component with name, email, and message fields, client-side validation, loading state, and success confirmation.",
+  "frontend/src/components/sections/ContactSection.tsx": "Contact section with location info, response time, and integrated contact form.",
+  "frontend/src/components/SiteFooter.tsx": "Footer with brief description and caffeine.ai attribution with heart icon.",
+  "frontend/src/App.tsx": "Main app component rendering all sections in a single-page layout with scroll-based SEO metadata updates and semantic HTML structure.",
+  "frontend/index.html": "HTML entry point with baseline SEO meta tags (description, keywords, Open Graph, Twitter cards) and proper lang attribute."
+}
